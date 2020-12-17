@@ -58,35 +58,35 @@ this.precioAdulto = 190*opcion;
  InfoHuesped infoMayor6[]= new InfoHuesped[opcion];
  for(int i=0; i<infoMayor6.length;i++)
 {
-String nombre = JOptionPane.showInputDialog(null,"Digite el nombre del huésped adulto "+(i+1));
-int edad = Integer.parseInt(JOptionPane.showInputDialog("Digite la edad del huésped adulto: "+(i+1)));
-String cedula = JOptionPane.showInputDialog(null,"Digite la cédula del huésped adulto "+(i+1));
+String nombre = JOptionPane.showInputDialog(null,"Digite el nombre del huésped MAYOR a 6 años: "+(i+1));
+int edad = Integer.parseInt(JOptionPane.showInputDialog("Digite la edad del huésped MAYOR a 6 años: "+(i+1)));
+String cedula = JOptionPane.showInputDialog(null,"Digite la cédula del huésped MAYOR a 6 años: "+(i+1));
 infoMayor6[i] = new InfoHuesped(nombre, edad, cedula);
 
 }
 for(int i=0; i<infoMayor6.length;i++)
  {//Salida que le muestra al usuario la informacion previamente digitada.
- JOptionPane.showMessageDialog(null,"El huésped MAYOR de 6 años "+(i+1)+" se llama "+infoMayor6[i].nombre
+ JOptionPane.showMessageDialog(null,"El huésped MAYOR a 6 años "+(i+1)+" se llama "+infoMayor6[i].nombre
                                +" tiene "+infoMayor6[i].edad+" años y su cédula es "+infoMayor6[i].cedula);
  }
  this.precioMayor6 = 145*opcion;
  }
  public void ConsultaMenor6()
  {//Tercera ventana que le pide al usuario la cantidad de niños menores a 6 años que desean reservar.
- int opcion = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite la cantidad de huéspedes MENORES a 6 años : "));
+ int opcion = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite la cantidad de huéspedes MENORES a 6 años: "));
  CantHuespedes += opcion;//Va sumando la cantidad de huespedes ingresados por el usuario.
  InfoHuesped infoMenor6[] = new InfoHuesped[opcion];
  for(int i=0; i<infoMenor6.length;i++)
 {
-String nombre=JOptionPane.showInputDialog(null,"Digite el nombre del huésped adulto "+(i+1));
-int edad= Integer.parseInt(JOptionPane.showInputDialog("Digite la edad del huésped adulto: "+(i+1)));
-String cedula=JOptionPane.showInputDialog(null,"Digite la cédula del huésped adulto "+(i+1));
+String nombre=JOptionPane.showInputDialog(null,"Digite el nombre del huésped MENOR a 6 años: "+(i+1));
+int edad= Integer.parseInt(JOptionPane.showInputDialog("Digite la edad del huésped MENOR a 6 años: "+(i+1)));
+String cedula=JOptionPane.showInputDialog(null,"Digite la cédula del huésped MENOR a 6 años:"+(i+1));
 infoMenor6[i]= new InfoHuesped(nombre, edad, cedula);
 
 } 
 for(int i=0; i<infoMenor6.length;i++)
  {//Salida que le muestra al usuario la informacion previamente digitada.
- JOptionPane.showMessageDialog(null,"El huésped MAYOR de 6 años "+(i+1)+" se llama "+infoMenor6[i].nombre
+ JOptionPane.showMessageDialog(null,"El huésped MENOR a 6 años "+(i+1)+" se llama "+infoMenor6[i].nombre
                                +" tiene "+infoMenor6[i].edad+" años y su cédula es "+infoMenor6[i].cedula);
  }
 this.precioMenor6 = 0;
